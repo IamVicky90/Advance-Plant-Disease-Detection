@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/services.css">
+    <title>Document</title>
+</head>
+<body>
+    {% include 'nav.html' %} {% block content %} {% endblock %}
+
+      <!-- introductory section is here  -->
+    <div class="intro-container">
+        <h1 class="intro-title">Welcome to our Plant Disease Detection System</h1>
+        <p class="intro-text">Our system uses machine learning algorithms to accurately diagnose and identify plant diseases. With our system, you can quickly and easily detect any potential diseases in your plants, saving you time and resources.</p>
+        <!-- <button class="intro-btn">Learn More</button> -->
+      </div>
+      <!-- ..................................................... -->
+      <center>
+
+        <section>
+          
+          <div class="container-fluid details">
+            <h1 class="text-center mt-5 ">Predict Various Plant Disease &amp; Get Cure</h1>
+            
+            <form action="/predict" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+              
+              <input type="file" name="image" class="upload">
+              <input type="submit" value="Predict">
+              
+            </form>
+          </div>
+        </section>
+      </center>
+        <!-- ..................................................... -->
+
+      <!-- services section is here -->
+      <section class="crop-section">
+        <div class="crop-card">
+          <img src="static/Images/tomatto.jpg" alt="Crop 1">
+          <div class="crop-details">
+            <h3>Tomatto</h3>
+            <p> A juicy and nutritious fruit that is commonly used in cooking and enjoyed raw in salads. Tomatoes are a rich source of vitamins A and C, potassium, and lycopene, and can be grown in a variety of climates.</p>
+          </div>
+        </div>
+        
+        <div class="crop-card">
+          <img src="static/Images/cauliflower.jpg" alt="Crop 2">
+          <div class="crop-details">
+            <h3>Cauliflower</h3>
+            <p> A versatile and nutrient-dense vegetable that can be eaten cooked or raw in a variety of dishes. Cauliflower is a good source of vitamin C, fiber, and antioxidants, and can be used as a low-carb substitute for rice or potatoes.</p>
+          </div>
+        </div>
+        
+        <div class="crop-card">
+          <img src="static/Images/pepperbell.jpg" alt="Crop 3">
+          <div class="crop-details">
+            <h3>Pepper Bell</h3>
+            <p>A colorful and crunchy vegetable that adds flavor and nutrition to many dishes. 
+            Bell peppers are high in vitamin C, potassium, and antioxidants. They can be eaten raw or cooked, and are a staple in many
+            cuisines around the world.</p>
+          </div>
+        </div>
+        
+        <!-- Add more crop cards as needed -->
+      </section>
+      <!-- technology section is here  -->
+      <!-- <div class="bg-img"><img src="techn.jpg" alt=""></div> -->
+      <section class="pesticide-service">
+        <div class="overlay"></div>
+        <div class="container">
+          <h2>Our Technology</h2>
+          <p>At VegDoc, we utilize advanced machine learning algorithms and artificial intelligence to provide accurate and effective pesticide recommendations. Our technology takes into account various factors such as crop type, pest type,  to generate customized recommendations that are tailored to your specific needs. With our state-of-the-art technology, we can help you achieve healthier crops, higher yields, and ultimately, greater profit</p>
+        </div>
+      </section>
+      
+      <!-- criteria section section is here  -->
+      <section class="pesticide-criteria">
+        <div class="pesticide-text">
+          <h2>CRITERIA </h2>
+          <p>When recommending the right pesticide for each disease, we take into consideration various factors such as the type of crop, the specific disease that is affecting the crop, the stage of the disease, and the severity of the infestation. Our system uses machine learning algorithms to analyze all of these factors and provide the best recommendation for each case. Additionally, we also take into account any environmental or health concerns, and strive to recommend the safest and most effective solution for each situation.</p>
+          <!-- <ul>
+            <li>Effectiveness against the specific disease</li>
+            <li>Compatibility with the crop or plant</li>
+            <li>Safety for the environment and the user</li>
+            <li>Cost-effectiveness</li>
+          </ul> -->
+        </div>
+        <div class="pesticide-image">
+          <img src="static/Images/criteria.jpg" alt="Slide Animation Image">
+        </div>
+      </section>   
+      
+      <!-- call to action section is here  -->
+      <section class="cta">
+        <h2>Ready to protect your crops?</h2>
+        <p>Contact us today to schedule a consultation!</p>
+        <a href="#" class="btn btn-primary">Contact Us</a>
+      </section>
+      
+      <!-- footer section is here  -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <h3 class="footer-section-header">About Us</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                tincidunt, erat in malesuada aliquam, est erat faucibus purus.
+              </p>
+            </div>
+            <div class="footer-section">
+              <h3 class="footer-section-header">Quick Links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3 class="footer-section-header">Contact Us</h3>
+              <ul>
+                <li>1234 Main St.</li>
+                <li>Anytown, USA 12345</li>
+                <li>(123) 456-7890</li>
+                <li>
+                  <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>
+              &copy; 2023 Your Website. All rights reserved. | Designed by
+              <a href="#">Your Name</a>
+            </p>
+          </div>
+        </div>
+      </footer>
+      <script src="static/js/services.js"></script>
+</body>
+</html>

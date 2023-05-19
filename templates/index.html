@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="static/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    {% include 'nav.html' %} {% block content %} {% endblock %}
+    <section class="hero">
+      <video autoplay loop muted poster="video-bg.jpg" id="video-bg">
+        <source src="static/video/anm.mp4" type="video/mp4">
+      </video>
+      <div class="hero-text">
+        <h1>FARMING INNOVATION </h1>
+        <!-- <p>We provide the best web design services.</p> -->
+      </div>
+    </section>
+
+    <!-- experimental section  -->
+   
+    
+    <!-- features and benefit section is here -->
+
+    <section class="features">
+      <div class="container">
+        <div class="box">
+          <i class="fas fa-search box-icon"></i>
+          <div class="box-content">
+            <img class="icon1" src="static/Images/icon1.webp" alt="" />
+            <h3>Accurate Detection</h3>
+            <p>
+              Our system uses advanced algorithms to accurately detect diseases
+              in crops, allowing for early intervention and prevention.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-mobile-alt box-icon"></i>
+          <div class="box-content">
+            <img class="icon1" src="static/Images/icon2.png" alt="" />
+            <h3>Mobile Accessible</h3>
+            <p>
+              Our system can be accessed through a mobile app, making it easy
+              for farmers to monitor their crops on-the-go.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <i class="fas fa-file-alt box-icon"></i>
+          <div class="box-content">
+            <img class="icon1" src="static/Images/icon3.png" alt="" />
+
+            <h3>Detailed Reports</h3>
+            <p>
+              Our system provides detailed reports on the health of crops,
+              including disease risk, growth rates, and nutrient deficiencies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ///////////////////////////////////////// -->
+
+    <!-- Testimonials section Start Here -->
+    <section class="testimonials">
+      <div class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+          <div class="testimonial-text">
+            <p>
+              "I've been using this disease detection system for my farm for the
+              past year and it has made a huge difference. It's easy to use and
+              has helped me catch problems early on."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <img src="static/Images/f1.jpg" alt="testimonial author" />
+            <div class="author-info">
+              <h4>Jane Doe</h4>
+              <span>Farm Owner</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-text">
+            <p>
+              "I highly recommend this system to any farmer looking to improve
+              their crop health. The detailed reports and mobile accessibility
+              make it a must-have."
+            </p>
+          </div>
+          <div class="testimonial-author">
+            <img src="static/Images/f2.jpg" alt="testimonial author" />
+            <div class="author-info">
+              <h4>John Smith</h4>
+              <span>Farm Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- call to action section -->
+
+    <section class="cta">
+      <div class="cta-container">
+        <h2>Ready to get started?</h2>
+        <p>Sign up now for our free trial.</p>
+        <button class="cta-button">Sign Up</button>
+      </div>
+    </section>
+
+    <!-- footer section is Here  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-section-header">About Us</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              tincidunt, erat in malesuada aliquam, est erat faucibus purus.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-section-header">Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-section-header">Contact Us</h3>
+            <ul>
+              <li>1234 Main St.</li>
+              <li>Anytown, USA 12345</li>
+              <li>(123) 456-7890</li>
+              <li>
+                <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2023 Your Website. All rights reserved. | Designed by
+            <a href="#">Your Name</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="static/js/script.js"></script>
+  </body>
+</html>

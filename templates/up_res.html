@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/up_res.css">
+    <title>Document</title>
+</head>
+<body>
+    {% include 'nav.html' %} {% block content %} {% endblock %}
+
+      
+      <!-- upload and result section is here  -->
+      <section class="upload-section">
+        <div class="upload-container">
+          <h2>Upload your plant image</h2>
+          <form id="upload-form">
+            <input type="file" id="image-upload" accept=".jpg, .jpeg, .png">
+            <label for="image-upload">
+              <span><i class="fas fa-cloud-upload-alt"></i></span>
+              Choose a file
+            </label>
+            <button type="submit">Upload</button>
+          </form>
+        </div>
+      </section>
+      
+      
+      <!-- footer section is here  -->
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-section">
+              <h3 class="footer-section-header">About Us</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus.</p>
+            </div>
+            <div class="footer-section">
+              <h3 class="footer-section-header">Quick Links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h3 class="footer-section-header">Contact Us</h3>
+              <ul>
+                <li>1234 Main St.</li>
+                <li>Anytown, USA 12345</li>
+                <li>(123) 456-7890</li>
+                <li><a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2023 Your Website. All rights reserved. | Designed by <a href="#">Your Name</a></p>
+          </div>
+        </div>
+      </footer>
+
+    <script src="static/js/up_res.js"></script>
+</body>
+</html>

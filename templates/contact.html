@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANYsbLH5MjOb7xsIUEa9tCCHuA2kQ5uZE&callback=initMap"
+      async
+      defer
+    ></script>
+
+    <link rel="stylesheet" href="static/css/contact.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    {% include 'nav.html' %} {% block content %} {% endblock %}
+
+    <!-- contact section start  -->
+
+    <!-- form section is here  -->
+    <div class="contact-form">
+      <form id="contact" action="#" method="post">
+        <h3>Contact Us</h3>
+        <fieldset>
+          <input
+            placeholder="Your name"
+            type="text"
+            tabindex="1"
+            required
+            autofocus
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Your Email Address"
+            type="email"
+            tabindex="2"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <input
+            placeholder="Your Phone Number (optional)"
+            type="tel"
+            tabindex="3"
+          />
+        </fieldset>
+        <fieldset>
+          <textarea
+            placeholder="Type your message here...."
+            tabindex="5"
+            required
+          ></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit">
+            Submit
+          </button>
+        </fieldset>
+      </form>
+    </div>
+
+    <!-- contact information section is here  -->
+    <section class="contact-info">
+      <div class="container">
+        <h2>Contact Information</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <h3>Address</h3>
+              <p>123 Main St, City, State ZIP</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-item">
+              <i class="fas fa-phone-alt"></i>
+              <h3>Phone</h3>
+              <p>(123) 456-7890</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <h3>Email</h3>
+              <p>info@example.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- location section is here  -->
+    <div id="map"></div>
+    <!-- faqs section  -->
+    <div class="faq">
+      <h2>Frequently Asked Questions</h2>
+      <ul>
+        <li>
+          <button class="question">How does your plant disease detection system work?</button>
+          <div class="answer">
+            Our system uses machine learning algorithms to analyze images of plants and detect any signs of disease or pests. The system is trained on a large dataset of images to accurately identify different types of plant diseases and provide recommendations for treatment.
+          </div>
+        </li>
+        <li>
+          <button class="question">What payment methods do you accept?</button>
+          <div class="answer">
+            We accept payment by credit card, PayPal, and bank transfer.
+          </div>
+        </li>
+        <li>
+          <button class="question">Do you offer free shipping?</button>
+          <div class="answer">
+            Yes, we offer free shipping on orders over $50.
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- footer section is here  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-section-header">About Us</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              tincidunt, erat in malesuada aliquam, est erat faucibus purus.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-section-header">Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-section-header">Contact Us</h3>
+            <ul>
+              <li>1234 Main St.</li>
+              <li>Anytown, USA 12345</li>
+              <li>(123) 456-7890</li>
+              <li>
+                <a href="mailto:info@yourwebsite.com">info@yourwebsite.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2023 Your Website. All rights reserved. | Designed by
+            <a href="#">Your Name</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="static/js/contact.js"></script>
+  </body>
+</html>
