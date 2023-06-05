@@ -15,12 +15,13 @@
  
  __Frontent based on html, css.__
   
-  ![error check your internet](https://github.com/IamVicky90/Plant-Disease-Prediction/blob/main/Images/1.PNG)
+  ![error check your internet](https://github.com/IamVicky90/Advance-Plant-Disease-Detection/assets/62692329/4d39b57e-4dd4-4938-911c-abf4cd9d8c3d)
+  ![error check your internet](https://github.com/IamVicky90/Advance-Plant-Disease-Detection/assets/62692329/bfaab0e8-547a-44a5-9cbb-cb6b6f7c4f0f)
   
   
   __Prediction Button where you drop your image.__
   
-  ![error check your internet](https://github.com/IamVicky90/Plant-Disease-Prediction/blob/main/Images/Capture.PNG)
+  ![error check your internet](https://github.com/IamVicky90/Advance-Plant-Disease-Detection/assets/62692329/b3cc2b22-5a18-477b-8d10-385020444f5c)
   
  
  __Final result with some advise that how to cure the infected Plant.__
